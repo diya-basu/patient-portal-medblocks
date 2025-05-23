@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fe93493f.css",
+    "main.js": "/static/js/main.06972e8e.js",
+    "static/js/377.c9e0190e.chunk.js": "/static/js/377.c9e0190e.chunk.js",
+    "static/js/991.01d688d4.chunk.js": "/static/js/991.01d688d4.chunk.js",
+    "static/js/504.74a36570.chunk.js": "/static/js/504.74a36570.chunk.js",
+    "static/js/465.f59de7ea.chunk.js": "/static/js/465.f59de7ea.chunk.js",
+    "static/js/5.45051bb0.chunk.js": "/static/js/5.45051bb0.chunk.js",
+    "static/js/148.4968ab89.chunk.js": "/static/js/148.4968ab89.chunk.js",
+    "static/js/32.65142041.chunk.js": "/static/js/32.65142041.chunk.js",
+    "static/js/14.c580c0e9.chunk.js": "/static/js/14.c580c0e9.chunk.js",
+    "static/js/644.840c7154.chunk.js": "/static/js/644.840c7154.chunk.js",
+    "static/media/pglite.wasm": "/static/media/pglite.f7c27050d1aed0c30e6d.wasm",
+    "static/media/pglite.data": "/static/media/pglite.8d92c2c034384efec43d.data",
+    "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
+    "static/media/home.png": "/static/media/home.1e77d920dfbf86f40132.png",
+    "static/media/home2.png": "/static/media/home2.81185b5f5c048194b3a9.png",
+    "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.1815e00441357e01619e.ttf",
+    "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
+    "static/media/background.jpg": "/static/media/background.1f665a1201fdcc4cbb02.jpg",
+    "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.c210719e60948b211a12.woff2",
+    "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
+    "static/media/home1.png": "/static/media/home1.919bbd05b9c7235f2e19.png",
+    "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.89999bdf5d835c012025.woff2",
+    "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
+    "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
+    "index.html": "/index.html",
+    "main.fe93493f.css.map": "/static/css/main.fe93493f.css.map",
+    "main.06972e8e.js.map": "/static/js/main.06972e8e.js.map",
+    "5.45051bb0.chunk.js.map": "/static/js/5.45051bb0.chunk.js.map",
+    "148.4968ab89.chunk.js.map": "/static/js/148.4968ab89.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fe93493f.css",
+    "static/js/main.06972e8e.js"
+  ]
+}
