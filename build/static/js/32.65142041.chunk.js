@@ -1,1 +1,0 @@
-(self.webpackChunkpatient_reg_app=self.webpackChunkpatient_reg_app||[]).push([[32],{32:()=>{}}]);
