@@ -30,7 +30,7 @@ A **frontend-only** patient registration app built with **React** and **Pglite**
 - **BroadcastChannel API** – Multi-tab data sync
 - **Font Awesome** – Icons
 - **CSS Animations** – Rotating icons
-- **Vite** – Fast development build tool
+- **Vercel** – Deployment tool
 
 ## Setup Instructions
 ### 1. Clone the Repository
