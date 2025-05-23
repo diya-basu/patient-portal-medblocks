@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background: url('./background.jpg') center/cover no-repeat fixed;
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  max-width: 900px;
+  width: 100%;
+  padding: 2.5rem 3rem;
+  background:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(135deg, #386beb, #36e7e1) border-box;
+  border: 4px solid transparent;
+  border-radius: 1rem;
+  box-shadow: 0 24px 24px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.app-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.app-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.app-container::-webkit-scrollbar-thumb {
+  background-color: #386beb;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
+
+.landing-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.landing-buttons button {
+  width: 80%;
+  max-width: 300px;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  background: linear-gradient(90deg, #36e7e1 0%, #386beb 100%);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.landing-buttons button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.panel {
+  width: 100%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.back-button {
+  align-self: flex-start;
+  margin: 0 0 1rem 0;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, #36e7e1 0%, #386beb 100%);
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.back-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.panel h2 {
+  font-size: 1.75rem;
+  margin: 0;
+  font-weight: 600;
+  color: #222;
+}
+
+.panel::-webkit-scrollbar {
+  width: 6px;
+}
+
+.panel::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.panel::-webkit-scrollbar-thumb {
+  background-color: #386beb;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
+
+.table-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.table-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background-color: #386beb;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
+.patient-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.patient-form input {
+  padding: 0.75rem 1rem;
+  font-size: 0.75rem;
+  border: 2px solid #ddd;
+  border-radius: 0.5rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  text-align: left;
+}
+
+.patient-form input:focus {
+  outline: none;
+  border-color: #007acc;
+  box-shadow: 0 0 8px rgba(0, 122, 204, 0.4);
+}
+
+.patient-form button[type="submit"],
+.sql-query-container button {
+  align-self: flex-end;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.75rem;
+  background: linear-gradient(90deg, #36e7e1 0%, #386beb 100%);
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.patient-form button[type="submit"]:hover,
+.sql-query-container button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.execute-button {
+  align-self: flex-end;
+  margin: 0 0 1rem 0;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, #36e7e1 0%, #386beb 100%);
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.execute-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.sql-query-container {
+  width: 100%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sql-query-container textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 0.75rem 1rem;
+  font-family: 'Montserrat', monospace;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 0.5rem;
+  resize: vertical;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  text-align: left;
+}
+
+.sql-query-container textarea:focus {
+  outline: none;
+  border-color: #007acc;
+  box-shadow: 0 0 8px rgba(0, 122, 204, 0.4);
+}
+
+.sql-query-container pre {
+  text-align: left;
+  background: #f4f4f4;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  max-height: 300px;
+  overflow-y: auto;
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: #333;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.table-container th,
+.table-container td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.table-container th {
+  background: #f7f7f7;
+  font-weight: 600;
+  color: #333;
+}
+
+.table-container tbody tr:hover {
+  background: rgba(54, 110, 235, 0.1);
+}
+
+.table-container td {
+  color: #444;
+}
+
+@media (max-width: 600px) {
+
+  .table-container th:nth-child(3),
+  .table-container td:nth-child(3) {
+    display: none;
+  }
+}
+
+.home-panel {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 24px 24px rgba(0, 0, 0, 0.3);
+}
+
+.pane {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
+}
+
+.left-pane {
+  background: #1f2a48;
+  color: #fff;
+  text-align: left;
+  align-items: flex-start;
+}
+
+.right-pane {
+  background: #fff;
+  color: #222;
+  text-align: left;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+  position: relative;
+}
+
+.right-pane .patient-form {
+  width: 100%;
+  max-width: 360px;
+}
+
+.right-pane .table-container {
+  width: 100%;
+  max-width: 360px;
+  margin-top: 1rem;
+}
+
+
+.right-pane .landing-buttons {
+  margin-top: 2rem;
+}
+
+.right-pane .landing-buttons button {
+  margin: 0 1rem;
+}
+
+.left-pane h2 {
+  margin-bottom: 0.25rem;
+}
+
+.left-pane p {
+  margin-top: 0;
+}
+
+.welcome-image {
+  width: 100%;
+  max-width: 350px;
+  margin-top: 6rem;
+  border-radius: 0.5rem;
+}
+
+.patient-image {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 3rem;
+  border-radius: 0.5rem;
+}
+
+.output-box {
+  width: 100%;
+  text-align: left;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  background: #f9f9f9;
+  min-height: 100px;
+  overflow-y: auto;
+  position: relative;
+  max-height: 40vh;
+}
+
+.output-box::-webkit-scrollbar {
+  width: 6px;
+}
+
+.output-box::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.output-box::-webkit-scrollbar-thumb {
+  background-color: #386beb;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
+/* Loader overlay and fade effect */
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: royalblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.loader {
+  width: 40px;
+  height: 40px;
+  --c: no-repeat linear-gradient(white 0 0);
+  background: var(--c), var(--c), var(--c), var(--c);
+  background-size: 21px 21px;
+  animation: l5 1.5s infinite cubic-bezier(0.3, 1, 0, 1);
+  margin-bottom: 20px;
+}
+
+@keyframes l5 {
+  0% {
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%
+  }
+
+  33% {
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    width: 60px;
+    height: 60px
+  }
+
+  66% {
+    background-position: 100% 0, 100% 100%, 0 100%, 0 0;
+    width: 60px;
+    height: 60px
+  }
+
+  100% {
+    background-position: 100% 0, 100% 100%, 0 100%, 0 0
+  }
+}
+
+.start-button {
+  padding: 10px 20px;
+  background: white;
+  border: none;
+  color: royalblue;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.start-button:hover {
+  transform: scale(1.1);
+}
+
+.hidden-under-loader {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.visible-content {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Optional initial fade-in animation for the loader */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
