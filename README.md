@@ -4,6 +4,12 @@ A **frontend-only** patient registration app built with **React** and **Pglite**
 
 **Live Demo:** https://patient-portal-medblocks.vercel.app/
 
+
+
+https://github.com/user-attachments/assets/8ac973dc-94bf-4d43-8deb-d8a352335de5
+
+
+
 ## ⚙️ Features
 ### Patient Registration
 - Add new patients with name, age, and medical condition.
