@@ -2,7 +2,7 @@
 # 🏥 Patient Registration App
 A **frontend-only** patient registration app built with **React** and **Pglite**. This app allows users to register new patients, run raw SQL queries, and ensures persistence and real-time sync across tabs—all without a backend server.
 
-**Live Demo:** [https://your-deployment-url.vercel.app](https://your-deployment-url.vercel.app)
+**Live Demo:** https://patient-portal-medblocks.vercel.app/
 
 ## ⚙️ Features
 ### Patient Registration
